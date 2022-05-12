@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<a th:href="@{/target}">访问目标target.html</a><br>
+<a th:href="@{/testExceptionHandle}">测试异常</a>
+<!--<a th:href="@{/test}">测试</a><br>-->
+<!--<a th:href="@{/test}">测试get &ndash;&gt;get</a><br>-->
+<!--<form th:action="@{/test}" method="post">-->
+<!--    <input type="submit" value="test post"><br>-->
+<!--</form>-->
+<!--&lt;!&ndash;<a th:href="@{/testput(username='admin',password=123456)}">测试test put value &ndash;&gt;/testput</a><br>&ndash;&gt;-->
+<!--<a th:href="@{/testRest/1/2}">rest &ndash;&gt;testRest</a><br>-->
+
+<!--<a th:href="@{/testModelAndView}">test Model And View</a><br>-->
+<!--<a th:href="@{/testModel}"> test Model </a><br>-->
+<!--<a th:href="@{/testMap}"> test Map </a><br>-->
+<!--<a th:href="@{/testModelMap}"> test Model Map </a><br>-->
+<!--<a th:href="@{/testSession}"> test Session </a><br>-->
+<!--<a th:href="@{/testApplication}"> test Application </a><br>-->
+<!--<a th:href="@{/testRedirect}"> test Redirect </a><br>-->
+<!--<a th:href="@{/employee}">查看员工信息</a>-->
+<!--<form th:action="@{/testRequestBody}" method="post">-->
+<!--    <input type="text" name="username"><br>-->
+<!--    <input type="text" name="password"><br>-->
+<!--    <input type="submit">-->
+<!--</form><br>-->
+<!--<form th:action="@{/testRequestEntity}" method="post">-->
+<!--    <input type="text" name="username"><br>-->
+<!--    <input type="password" name="password"><br>-->
+<!--    <input type="submit">-->
+<!--</form>-->
+<!--<a th:href="@{/testResponse}">servletAPi获取response对象响应浏览器</a><br>-->
+<!--<a th:href="@{/testResponseBody}">标签获取response employee对象响应浏览器</a><br>-->
+<!--<div id="app">-->
+<!--    <a th:href="@{/testAjax}" @click="testAjax">testAjax</a><br>-->
+<!--</div>-->
+<!--<script type="text/javascript" th:src="@{/static/vue.js}"></script>-->
+<!--<script type="text/javascript" th:src="@{/static/axios.min.js}"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var vue = new Vue({-->
+<!--        el:"#app",-->
+<!--        methods:{-->
+<!--            testAjax:function (event) {-->
+<!--                axios({-->
+<!--                    method:"post",-->
+<!--                    url:event.target.href,-->
+<!--                    params:{-->
+<!--                        username:"admin",-->
+<!--                        password:"123456"-->
+<!--                    }-->
+<!--                }).then(function (response) {-->
+<!--                    alert(response.data);-->
+<!--                });-->
+<!--                event.preventDefault();-->
+<!--            }-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+</body>
+</html>
